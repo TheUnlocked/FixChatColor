@@ -10,16 +10,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.Team;
 
 public class FixChatColors extends JavaPlugin implements Listener{
-    Server s;
+    Server server;
 
     @Override
     public void onEnable() {
-        s = getServer();
+        server = getServer();
 
-        s.getPluginManager().registerEvents(this,this);
+        server.getPluginManager().registerEvents(this,this);
     }
 
-    @EventHandler(priority = EventPriority.LOW)
+    @EventHandler(priority = EventPriority.NORMAL)
     public void onChatEvent(AsyncPlayerChatEvent e){
         if (e.getPlayer() == null)
             return;
