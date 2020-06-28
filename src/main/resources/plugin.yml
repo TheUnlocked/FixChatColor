@@ -1,5 +1,5 @@
 name: FixChatColors
-version: 1.0.1
-api-version: 1.13
+version: 1.0.2
+api-version: "1.13"
 author: Unlocked
 main: unlocked.fixchatcolors.FixChatColors
